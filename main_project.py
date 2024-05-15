@@ -72,7 +72,7 @@ async def Go(call: CallbackQuery, state: FSMContext):
         ushot = data.get("user_shot")
         bshot = data.get("bot_shot")
         await call.message.answer_photo(photo="https://blog.eldorado.ru/storage/publication/Ki2swLj1frKUfFCCq0SO3CF6iGpe3iCl0t5fvW4r.jpeg",
-            caption=f"{html.bold("oyin boshlandi")} ⏳\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot}\n{verus} : {bshot}\n\ntopni teping ⚽️",
+            caption=f"{html.bold(str("oyin boshlandi"))} ⏳\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot}\n{verus} : {bshot}\n\ntopni teping ⚽️",
             reply_markup=variantlar.as_markup())
         await state.set_state(KickPenalty.shot)
 
