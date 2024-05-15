@@ -72,7 +72,7 @@ async def Go(call: CallbackQuery, state: FSMContext):
         ushot = data.get("user_shot")
         bshot = data.get("bot_shot")
         await call.message.answer_photo(photo="https://blog.eldorado.ru/storage/publication/Ki2swLj1frKUfFCCq0SO3CF6iGpe3iCl0t5fvW4r.jpeg",
-            caption=f"{html.bold(str("oyin boshlandi"))} ⏳\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot}\n{verus} : {bshot}\n\ntopni teping ⚽️",
+            caption=f"{html.bold('oyin boshlandi')} ⏳\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot}\n{verus} : {bshot}\n\ntopni teping ⚽️",
             reply_markup=variantlar.as_markup())
         await state.set_state(KickPenalty.shot)
 
@@ -109,30 +109,30 @@ async def bir(call: CallbackQuery, state: FSMContext):
         if penalty1 == 4:
             if (komp - user1) >= 2:
                 await call.message.answer_photo(photo="https://static.seekingalpha.com/uploads/2018/4/18/8476581-15240913408095038_origin.png",
-                    caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user1}-{komp}\n🥉 siz yutqazdingiz",
+                    caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user1}-{komp}\n🥉 siz yutqazdingiz",
                     reply_markup=start) 
 
             else:        
                 await call.message.answer_photo(photo="https://wallpapercave.com/wp/wp2515770.jpg",
-                    caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
+                    caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
                     reply_markup=variantlar.as_markup())
                 await state.set_state(KeepPenalty.kep)
 
         elif penalty1 >= 5:
             if (komp - user1) == 1:
                 await call.message.answer_photo(photo="https://static.seekingalpha.com/uploads/2018/4/18/8476581-15240913408095038_origin.png",
-                    caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user1}-{komp}\n🥉 siz yutqazdingiz",
+                    caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user1}-{komp}\n🥉 siz yutqazdingiz",
                     reply_markup=start) 
 
             else:        
                 await call.message.answer_photo(photo="https://wallpapercave.com/wp/wp2515770.jpg",
-                    caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
+                    caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
                     reply_markup=variantlar.as_markup())
                 await state.set_state(KeepPenalty.kep)    
         
         else:        
             await call.message.answer_photo(photo="https://wallpapercave.com/wp/wp2515770.jpg",
-                caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
+                caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
                 reply_markup=variantlar.as_markup())
             await state.set_state(KeepPenalty.kep)    
 
@@ -155,30 +155,30 @@ async def bir(call: CallbackQuery, state: FSMContext):
         if penalty1 == 4:
             if (user1 - komp) == 3:
                 await call.message.answer_photo(photo="https://wallpapercave.com/wp/wp2515770.jpg",
-                    caption=f"{html.bold("Goool")} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user1}-{komp}\n🏆 siz finalga chiqtingiz",
+                    caption=f"{html.bold('Goool')} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user1}-{komp}\n🏆 siz finalga chiqtingiz",
                     reply_markup=final)                      
 
             else:
                 await call.message.answer_photo(photo="https://wallpapers.com/images/hd/cool-soccer-ball-goal-shot-6mzthep8me8z4dz6.jpg",
-                    caption=f"{html.bold("Goool")} ☄️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
+                    caption=f"{html.bold('Goool')} ☄️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
                     reply_markup=variantlar.as_markup())
                 await state.set_state(KeepPenalty.kep)
 
         elif penalty1 >= 5:    
             if (user1 - komp) == 2:    
                 await call.message.answer_photo(photo="https://wallpapercave.com/wp/wp2515770.jpg",
-                    caption=f"{html.bold("Goool")} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user1}-{komp}\n🏆 siz finalga chiqtingiz",
+                    caption=f"{html.bold('Goool')} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user1}-{komp}\n🏆 siz finalga chiqtingiz",
                     reply_markup=final)                      
 
             else:
                 await call.message.answer_photo(photo="https://wallpapers.com/images/hd/cool-soccer-ball-goal-shot-6mzthep8me8z4dz6.jpg",
-                    caption=f"{html.bold("Goool")} ☄️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
+                    caption=f"{html.bold('Goool')} ☄️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
                     reply_markup=variantlar.as_markup())
                 await state.set_state(KeepPenalty.kep)
         
         else:
             await call.message.answer_photo(photo="https://wallpapers.com/images/hd/cool-soccer-ball-goal-shot-6mzthep8me8z4dz6.jpg",
-                caption=f"{html.bold("Goool")} ☄️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
+                caption=f"{html.bold('Goool')} ☄️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
                 reply_markup=variantlar.as_markup())
             await state.set_state(KeepPenalty.kep)
 
@@ -215,42 +215,42 @@ async def bir1(call: CallbackQuery, state: FSMContext):
         if pen1 == 3:
             if (user - komp1) == 3:
                 await call.message.answer_photo(photo="https://wallpapercave.com/wp/wp2515770.jpg",
-                    caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🏆 siz finalga chiqtingiz",
+                    caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🏆 siz finalga chiqtingiz",
                     reply_markup=final)    
         
             else:        
                 await call.message.answer_photo(photo="https://wallpapercave.com/wp/wp2515770.jpg",
-                    caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
+                    caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
                     reply_markup=variantlar.as_markup())
                 await state.set_state(KickPenalty.shot) 
 
         elif pen1 == 4:
             if (user - komp1) == 2:   
                 await call.message.answer_photo(photo="https://wallpapercave.com/wp/wp2515770.jpg",
-                    caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🏆 siz finalga chiqtingiz",
+                    caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🏆 siz finalga chiqtingiz",
                     reply_markup=final) 
             
             else:        
                 await call.message.answer_photo(photo="https://wallpapercave.com/wp/wp2515770.jpg",
-                    caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
+                    caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
                     reply_markup=variantlar.as_markup())
                 await state.set_state(KickPenalty.shot) 
 
         elif pen1 >= 5:
             if user > komp1:
                 await call.message.answer_photo(photo="https://wallpapercave.com/wp/wp2515770.jpg",
-                    caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🏆 siz finalga chiqtingiz",
+                    caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🏆 siz finalga chiqtingiz",
                     reply_markup=final) 
             
             else:        
                 await call.message.answer_photo(photo="https://wallpapercave.com/wp/wp2515770.jpg",
-                    caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
+                    caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
                     reply_markup=variantlar.as_markup())
                 await state.set_state(KickPenalty.shot)
         
         else:        
             await call.message.answer_photo(photo="https://wallpapercave.com/wp/wp2515770.jpg",
-                caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
+                caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
                 reply_markup=variantlar.as_markup())
             await state.set_state(KickPenalty.shot)
 
@@ -273,42 +273,42 @@ async def bir1(call: CallbackQuery, state: FSMContext):
         if pen1 == 3:
             if (komp1 - user) == 3:
                 await call.message.answer_photo(photo="https://static.seekingalpha.com/uploads/2018/4/18/8476581-15240913408095038_origin.png",
-                    caption=f"{html.bold("Goool")} ☄️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🥉 siz yutqazdingiz",
+                    caption=f"{html.bold('Goool')} ☄️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🥉 siz yutqazdingiz",
                     reply_markup=start)    
             
             else:
                 await call.message.answer_photo(photo="https://wallpapers.com/images/hd/cool-soccer-ball-goal-shot-6mzthep8me8z4dz6.jpg",
-                    caption=f"{html.bold("Goool")} ☄️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
+                    caption=f"{html.bold('Goool')} ☄️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
                     reply_markup=variantlar.as_markup())
                 await state.set_state(KickPenalty.shot)
 
         elif pen1 == 4:
             if (komp1 - user) == 2:  
                 await call.message.answer_photo(photo="https://static.seekingalpha.com/uploads/2018/4/18/8476581-15240913408095038_origin.png",
-                    caption=f"{html.bold("Goool")} ☄️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🥉 siz yutqazdingiz",
+                    caption=f"{html.bold('Goool')} ☄️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🥉 siz yutqazdingiz",
                     reply_markup=start)    
             
             else:
                 await call.message.answer_photo(photo="https://wallpapers.com/images/hd/cool-soccer-ball-goal-shot-6mzthep8me8z4dz6.jpg",
-                    caption=f"{html.bold("Goool")} ☄️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
+                    caption=f"{html.bold('Goool')} ☄️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
                     reply_markup=variantlar.as_markup())
                 await state.set_state(KickPenalty.shot)      
 
         elif pen1 >= 5:
             if komp1 > user:    
                 await call.message.answer_photo(photo="https://static.seekingalpha.com/uploads/2018/4/18/8476581-15240913408095038_origin.png",
-                    caption=f"{html.bold("Goool")} ☄️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🥉 siz yutqazdingiz",
+                    caption=f"{html.bold('Goool')} ☄️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🥉 siz yutqazdingiz",
                     reply_markup=start)    
             
             else:
                 await call.message.answer_photo(photo="https://wallpapers.com/images/hd/cool-soccer-ball-goal-shot-6mzthep8me8z4dz6.jpg",
-                    caption=f"{html.bold("Goool")} ☄️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
+                    caption=f"{html.bold('Goool')} ☄️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
                     reply_markup=variantlar.as_markup())
                 await state.set_state(KickPenalty.shot)    
         
         else:
             await call.message.answer_photo(photo="https://wallpapers.com/images/hd/cool-soccer-ball-goal-shot-6mzthep8me8z4dz6.jpg",
-                caption=f"{html.bold("Goool")} ☄️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
+                caption=f"{html.bold('Goool')} ☄️\n\n  🇪🇺 Yarim-final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
                 reply_markup=variantlar.as_markup())
             await state.set_state(KickPenalty.shot)
 
@@ -342,7 +342,7 @@ async def Final(call: CallbackQuery, state: FSMContext):
         ushot = data.get("user_shot")
         bshot = data.get("bot_shot")
         await call.message.answer_photo(photo="https://blog.eldorado.ru/storage/publication/Ki2swLj1frKUfFCCq0SO3CF6iGpe3iCl0t5fvW4r.jpeg",
-            caption=f"{html.bold("oyin boshlandi")} ⏳\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot}\n{verus} : {bshot}\n\ntopni teping ⚽️",
+            caption=f"{html.bold('oyin boshlandi')} ⏳\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot}\n{verus} : {bshot}\n\ntopni teping ⚽️",
             reply_markup=variantlar.as_markup())
         await state.set_state(KickFinal.shot)
 
@@ -379,30 +379,30 @@ async def ikki(call: CallbackQuery, state: FSMContext):
         if penalty1 == 4:
             if komp - user1 >= 2:
                 await call.message.answer_photo(photo="https://static.seekingalpha.com/uploads/2018/4/18/8476581-15240913408095038_origin.png",
-                    caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user1}-{komp}\n🥈 siz yutqazdingiz",
+                    caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user1}-{komp}\n🥈 siz yutqazdingiz",
                     reply_markup=start) 
 
             else:        
                 await call.message.answer_photo(photo="https://wallpapercave.com/wp/wp2515770.jpg",
-                    caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
+                    caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
                     reply_markup=variantlar.as_markup())
                 await state.set_state(KeepFinal.kep)
 
         elif penalty1 >= 5:
             if komp - user1 == 1:
                 await call.message.answer_photo(photo="https://static.seekingalpha.com/uploads/2018/4/18/8476581-15240913408095038_origin.png",
-                    caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user1}-{komp}\n🥈 siz yutqazdingiz",
+                    caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user1}-{komp}\n🥈 siz yutqazdingiz",
                     reply_markup=start) 
 
             else:        
                 await call.message.answer_photo(photo="https://wallpapercave.com/wp/wp2515770.jpg",
-                    caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
+                    caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
                     reply_markup=variantlar.as_markup())
                 await state.set_state(KeepFinal.kep)    
         
         else:        
             await call.message.answer_photo(photo="https://wallpapercave.com/wp/wp2515770.jpg",
-                caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
+                caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
                 reply_markup=variantlar.as_markup())
             await state.set_state(KeepFinal.kep)    
 
@@ -425,30 +425,30 @@ async def ikki(call: CallbackQuery, state: FSMContext):
         if penalty1 == 4:
             if user1 - komp == 3:
                 await call.message.answer_photo(photo="https://static.tildacdn.com/tild3031-3937-4039-a233-336134383131/trophy-scaled.jpeg",
-                    caption=f"{html.bold("Goool")} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user1}-{komp}\n🥇 siz chempion boldingingiz",
+                    caption=f"{html.bold('Goool')} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user1}-{komp}\n🥇 siz chempion boldingingiz",
                     reply_markup=start)                      
 
             else:
                 await call.message.answer_photo(photo="https://wallpapers.com/images/hd/cool-soccer-ball-goal-shot-6mzthep8me8z4dz6.jpg",
-                    caption=f"{html.bold("Goool")} ☄️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
+                    caption=f"{html.bold('Goool')} ☄️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
                     reply_markup=variantlar.as_markup())
                 await state.set_state(KeepFinal.kep)
 
         elif penalty1 >= 5:    
             if user1 - komp == 2:    
                 await call.message.answer_photo(photo="https://static.tildacdn.com/tild3031-3937-4039-a233-336134383131/trophy-scaled.jpeg",
-                    caption=f"{html.bold("Goool")} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user1}-{komp}\n🥇 siz chempion boldingingiz",
+                    caption=f"{html.bold('Goool')} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user1}-{komp}\n🥇 siz chempion boldingingiz",
                     reply_markup=start)                      
 
             else:
                 await call.message.answer_photo(photo="https://wallpapers.com/images/hd/cool-soccer-ball-goal-shot-6mzthep8me8z4dz6.jpg",
-                    caption=f"{html.bold("Goool")} ☄️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
+                    caption=f"{html.bold('Goool')} ☄️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
                     reply_markup=variantlar.as_markup())
                 await state.set_state(KeepFinal.kep)
         
         else:
             await call.message.answer_photo(photo="https://wallpapers.com/images/hd/cool-soccer-ball-goal-shot-6mzthep8me8z4dz6.jpg",
-                caption=f"{html.bold("Goool")} ☄️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
+                caption=f"{html.bold('Goool')} ☄️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni qaytaring 🧤",
                 reply_markup=variantlar.as_markup())
             await state.set_state(KeepFinal.kep)
 
@@ -485,42 +485,42 @@ async def iki1(call: CallbackQuery, state: FSMContext):
         if pen1 == 3:
             if user - komp1 == 3:
                 await call.message.answer_photo(photo="https://static.tildacdn.com/tild3031-3937-4039-a233-336134383131/trophy-scaled.jpeg",
-                    caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🥇 siz chempion boldingingiz",
+                    caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🥇 siz chempion boldingingiz",
                     reply_markup=start)    
         
             else:        
                 await call.message.answer_photo(photo="https://wallpapercave.com/wp/wp2515770.jpg",
-                    caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
+                    caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
                     reply_markup=variantlar.as_markup())
                 await state.set_state(KickFinal.shot) 
 
         elif pen1 == 4:
             if user - komp1 == 2:   
                 await call.message.answer_photo(photo="https://wallpapercave.com/wp/wp2515770.jpg",
-                    caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🥇 siz chempion boldingingiz",
+                    caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🥇 siz chempion boldingingiz",
                     reply_markup=start) 
             
             else:        
                 await call.message.answer_photo(photo="https://static.tildacdn.com/tild3031-3937-4039-a233-336134383131/trophy-scaled.jpeg",
-                    caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
+                    caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
                     reply_markup=variantlar.as_markup())
                 await state.set_state(KickFinal.shot) 
 
         elif pen1 >= 5:
             if user > komp1:
                 await call.message.answer_photo(photo="https://static.tildacdn.com/tild3031-3937-4039-a233-336134383131/trophy-scaled.jpeg",
-                    caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🥇 siz chempion boldingingiz",
+                    caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🥇 siz chempion boldingingiz",
                     reply_markup=start) 
             
             else:        
                 await call.message.answer_photo(photo="https://wallpapercave.com/wp/wp2515770.jpg",
-                    caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
+                    caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
                     reply_markup=variantlar.as_markup())
                 await state.set_state(KickFinal.shot)
         
         else:        
             await call.message.answer_photo(photo="https://wallpapercave.com/wp/wp2515770.jpg",
-                caption=f"{html.bold("Gol emas")} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
+                caption=f"{html.bold('Gol emas')} ❗️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
                 reply_markup=variantlar.as_markup())
             await state.set_state(KickFinal.shot)
 
@@ -543,42 +543,42 @@ async def iki1(call: CallbackQuery, state: FSMContext):
         if pen1 == 3:
             if komp1 - user == 3:
                 await call.message.answer_photo(photo="https://static.seekingalpha.com/uploads/2018/4/18/8476581-15240913408095038_origin.png",
-                    caption=f"{html.bold("Goool")} ☄️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🥈 siz yutqazdingiz",
+                    caption=f"{html.bold('Goool')} ☄️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🥈 siz yutqazdingiz",
                     reply_markup=start)    
             
             else:
                 await call.message.answer_photo(photo="https://wallpapers.com/images/hd/cool-soccer-ball-goal-shot-6mzthep8me8z4dz6.jpg",
-                    caption=f"{html.bold("Goool")} ☄️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
+                    caption=f"{html.bold('Goool')} ☄️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
                     reply_markup=variantlar.as_markup())
                 await state.set_state(KickFinal.shot)
 
         elif pen1 == 4:
             if komp1 - user == 2:  
                 await call.message.answer_photo(photo="https://static.seekingalpha.com/uploads/2018/4/18/8476581-15240913408095038_origin.png",
-                    caption=f"{html.bold("Goool")} ☄️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🥈 siz yutqazdingiz",
+                    caption=f"{html.bold('Goool')} ☄️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🥈 siz yutqazdingiz",
                     reply_markup=start)    
             
             else:
                 await call.message.answer_photo(photo="https://wallpapers.com/images/hd/cool-soccer-ball-goal-shot-6mzthep8me8z4dz6.jpg",
-                    caption=f"{html.bold("Goool")} ☄️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
+                    caption=f"{html.bold('Goool')} ☄️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
                     reply_markup=variantlar.as_markup())
                 await state.set_state(KickFinal.shot)      
 
         elif pen1 >= 5:
             if komp1 > user:    
                 await call.message.answer_photo(photo="https://static.seekingalpha.com/uploads/2018/4/18/8476581-15240913408095038_origin.png",
-                    caption=f"{html.bold("Goool")} ☄️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🥈 siz yutqazdingiz",
+                    caption=f"{html.bold('Goool')} ☄️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\n⚠️ {html.bold("oyin tugadi")}\n📌 hisob: {user}-{komp1}\n🥈 siz yutqazdingiz",
                     reply_markup=start)    
             
             else:
                 await call.message.answer_photo(photo="https://wallpapers.com/images/hd/cool-soccer-ball-goal-shot-6mzthep8me8z4dz6.jpg",
-                    caption=f"{html.bold("Goool")} ☄️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
+                    caption=f"{html.bold('Goool')} ☄️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
                     reply_markup=variantlar.as_markup())
                 await state.set_state(KickFinal.shot)    
         
         else:
             await call.message.answer_photo(photo="https://wallpapers.com/images/hd/cool-soccer-ball-goal-shot-6mzthep8me8z4dz6.jpg",
-                caption=f"{html.bold("Goool")} ☄️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
+                caption=f"{html.bold('Goool')} ☄️\n\n  🇪🇺 Final\n🙎🏻‍♂️ user          : {ushot1}\n{verus} : {bshot1}\n\ntopni teping ⚽️",
                 reply_markup=variantlar.as_markup())
             await state.set_state(KickFinal.shot)            
 
